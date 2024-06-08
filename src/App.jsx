@@ -1,7 +1,26 @@
-import React from 'react'
+import { createBrowserRouter, Router, RouterProvider } from "react-router-dom"
 
-export default function App() {
+import { ThemeProvider } from "styled-components"
+
+import {Home} from "./pages/Home"
+import { theme } from "./style/theme"
+
+
+const router = createBrowserRouter({
+  path: "/",
+
+  element: <Home/>
+
+
+})
+
+export function App() {
   return (
-    <div>App</div>
+    <ThemeProvider theme={theme}> 
+      
+      <RouterProvider router= {router}/> 
+    
+    
+    </ThemeProvider>
   )
 }
