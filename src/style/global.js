@@ -17,13 +17,13 @@ export const GlobalStyle = createGlobalStyle `
 
     body {
         font-size: 1.6rem;
-        background: ${props => props.theme.homeBackground}
+        background: ${props => props.theme.homeBackground};
 
-        heigth: 100svh;
+        height: 100svh;
         display: flex;
         justify-content:center;
         align-items: center;
-        
+
     
     }
 
